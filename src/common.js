@@ -9,5 +9,9 @@ export const ___ = {
 
     isString: str => {
         return typeof str === 'string';
+    },
+    
+    isObject: obj => {
+        return typeof obj === 'object';
     }
 };
