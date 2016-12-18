@@ -1,0 +1,19 @@
+{
+  "name": "powerbelt",
+  "version": "0.0.0",
+  "description": "JavaScript Utility Belt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesselpalmer/powerbelt.git"
+  },
+  "author": "Jesse Palmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesselpalmer/powerbelt/issues"
+  },
+  "homepage": "https://github.com/jesselpalmer/powerbelt#readme"
+}
