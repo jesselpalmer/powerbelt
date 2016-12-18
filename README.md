@@ -1,1 +1,3 @@
 # powerbelt
+
+JavaScript utility library
