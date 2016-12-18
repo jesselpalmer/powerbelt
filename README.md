@@ -1,3 +1,3 @@
-# powerbelt
+# Powerbelt
 
 JavaScript utility library
