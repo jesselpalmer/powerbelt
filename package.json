@@ -2,21 +2,28 @@
   "name": "powerbelt",
   "version": "0.0.0",
   "description": "JavaScript Utility Belt",
+  "keywords": "utility",
+  "homepage": "https://github.com/jesselpalmer/powerbelt#readme",
+  "bugs": {
+    "url": "https://github.com/jesselpalmer/powerbelt/issues"
+  },
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register"
+    "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
+    "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jesselpalmer/powerbelt.git"
   },
   "author": "Jesse Palmer",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jesselpalmer/powerbelt/issues"
-  },
-  "homepage": "https://github.com/jesselpalmer/powerbelt#readme",
+  "contributors": [{
+      "name": "Jesse Palmer",
+      "email": "jesselpalmer@gmail.com",
+      "url": "jesselpalmer.com"
+  }],
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-env": "^1.1.4",
@@ -28,5 +35,8 @@
   },
   "xo": {
     "envs": ["jasmine"]
+  },
+  "engines": {
+    "node" : ">=7.2.1"
   }
 }
