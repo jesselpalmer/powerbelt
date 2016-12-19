@@ -3,3 +3,9 @@
 
 # JetBrains IDE
 .idea
+
+# Distribution files
+dist
+
+# Node.js modules
+node_modules
