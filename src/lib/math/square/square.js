@@ -1,3 +1,3 @@
-/**
- * Created by kzv874 on 12/18/16.
- */
+export default function square(num) {
+	return num * num;
+}
