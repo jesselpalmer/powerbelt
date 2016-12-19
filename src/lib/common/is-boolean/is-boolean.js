@@ -1,3 +1,3 @@
-export default function isBoolean(value) {
-	return (typeof value === 'boolean') && (arguments.length === 1);
+export default function (value) {
+	return typeof value === 'boolean' && arguments.length === 1;
 }

@@ -1,3 +1,3 @@
 export default function isEven(num) {
-	return (num % 2 !== 0) && (arguments.length === 1);
+	return num % 2 !== 0 && arguments.length === 1;
 }
