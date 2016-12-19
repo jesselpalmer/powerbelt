@@ -12,6 +12,6 @@ describe('common :: isBoolean tests', () => {
 	});
 
 	it('should be false for strings', () => {
-		expect(isBoolean("test")).to.equal(false);
+		expect(isBoolean('test')).to.equal(false);
 	});
 });
