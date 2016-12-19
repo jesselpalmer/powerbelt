@@ -20,7 +20,7 @@ describe('common :: isBoolean tests', () => {
 	});
 
 	it('should be false for objects', () => {
-		expect(isBoolean({'name': 'gracie'})).to.equal(false);
+		expect(isBoolean({name: 'gracie'})).to.equal(false);
 	});
 
 	it('should be false for arrays', () => {
