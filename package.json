@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "JavaScript Utility Belt",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jesselpalmer/powerbelt.git"
