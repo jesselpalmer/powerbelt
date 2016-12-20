@@ -1,5 +1,5 @@
 test:
   override:
-    - mocha './src/**/*.spec.js' --reporter mocha-junit-reporter:
+    - mocha './src/**/*.spec.js' --reporter mocha-junit-reporter --compilers js:babel-register:
         environment:
           MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
