@@ -1,5 +1,5 @@
 /**
- * Cube()
+ * cube()
  * ----------
  * Method that returns a cubed number.
  * @param {number} num - The number that will be cubed.
