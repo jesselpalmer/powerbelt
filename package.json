@@ -2,7 +2,7 @@
   "name": "powerbelt",
   "version": "0.0.0",
   "description": "JavaScript Utility Belt",
-  "keywords": "utility",
+  "keywords": ["utility"],
   "homepage": "https://github.com/jesselpalmer/powerbelt#readme",
   "bugs": {
     "url": "https://github.com/jesselpalmer/powerbelt/issues"
