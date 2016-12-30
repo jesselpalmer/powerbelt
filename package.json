@@ -14,10 +14,7 @@
     "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
     "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jesselpalmer/powerbelt.git"
-  },
+  "repository": "git+https://github.com/jesselpalmer/powerbelt.git",
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com)",
   "contributors": [
     {
