@@ -1,7 +1,8 @@
 /**
  * isEven()
  * ----------
- * Method that tests whether a number is an even.
+ * Method that tests whether a number is an even. An even number is defined as a number that is divided by two with no
+ * remainder.
  * @param {any} num - The number that will be tested.
  * @return {boolean} - Whether a number is even or not.
  */
