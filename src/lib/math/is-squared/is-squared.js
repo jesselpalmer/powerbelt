@@ -6,7 +6,9 @@
  * @return {boolean} - The result of the squared check.
  */
 export default function isSquared(num) {
-	if (num === 0) return false;
+	if (num === 0) {
+		return false;
+	}
 
 	let count = 0;
 
