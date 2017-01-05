@@ -2,7 +2,7 @@ import isOdd from './is-odd';
 
 const expect = require('chai').expect;
 
-describe('common :: isOdd tests', () => {
+describe('math :: isOdd tests', () => {
 	it('should be false when 2 is tested', () => {
 		expect(isOdd(2)).to.be.equal(false);
 	});

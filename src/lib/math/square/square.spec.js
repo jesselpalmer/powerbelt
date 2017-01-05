@@ -2,7 +2,7 @@ import square from './square';
 
 const expect = require('chai').expect;
 
-describe('common :: square tests', () => {
+describe('math :: square tests', () => {
 	it('should be 4 when 2 is squared', () => {
 		expect(square(2)).to.equal(4);
 	});

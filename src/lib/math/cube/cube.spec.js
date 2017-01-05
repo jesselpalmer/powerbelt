@@ -2,7 +2,7 @@ import cube from './cube';
 
 const expect = require('chai').expect;
 
-describe('common :: cube tests', () => {
+describe('math :: cube tests', () => {
 	it('should be 8 when 2 is cubed', () => {
 		expect(cube(2)).to.equal(8);
 	});

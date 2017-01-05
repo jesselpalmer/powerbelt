@@ -2,7 +2,7 @@ import isSquared from './is-squared';
 
 const expect = require('chai').expect;
 
-describe('common :: isSquared tests', () => {
+describe('math :: isSquared tests', () => {
 	it('should be true for squared positive integers', () => {
 		expect(isSquared(169)).to.be.equal(true);
 	});

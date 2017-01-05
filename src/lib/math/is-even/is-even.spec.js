@@ -2,7 +2,7 @@ import isEven from './is-even';
 
 const expect = require('chai').expect;
 
-describe('common :: isEven tests', () => {
+describe('math :: isEven tests', () => {
 	it('should be true when 2 is tested', () => {
 		expect(isEven(2)).to.be.equal(true);
 	});
