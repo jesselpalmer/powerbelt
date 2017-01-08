@@ -6,5 +6,5 @@
  * @return {boolean} - Whether a value is a string or not.
  */
 export default function isString(value) {
-	return typeof value === 'string' && arguments.length === 1;
+  return typeof value === 'string' && arguments.length === 1;
 }

@@ -6,8 +6,8 @@
  * @return {boolean} - Whether a value is a boolean or not.
  */
 export default function isObject(value) {
-	return typeof value === 'object' &&
-		arguments.length === 1 &&
-		value !== null &&
-		Object.prototype.toString.call(value) !== '[object Array]';
+  return typeof value === 'object' &&
+    arguments.length === 1 &&
+    value !== null &&
+    Object.prototype.toString.call(value) !== '[object Array]';
 }

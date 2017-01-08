@@ -6,5 +6,5 @@
  * @return {boolean} - Whether a value is a number or not.
  */
 export default function isNumber(value) {
-	return typeof value === 'number' && arguments.length === 1;
+  return typeof value === 'number' && arguments.length === 1;
 }
