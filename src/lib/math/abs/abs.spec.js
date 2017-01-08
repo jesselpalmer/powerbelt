@@ -10,4 +10,8 @@ describe('math :: abs tests', () => {
 	it('should be 4', () => {
 		expect(abs(-4)).to.equal(4);
 	});
+
+  it('should an error thrown if string is used', () => {
+    expect(() => { abs('3'); }).to.throw(Error);
+  });
 });
