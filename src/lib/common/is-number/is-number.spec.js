@@ -20,7 +20,7 @@ describe('common :: isNumber tests', () => {
   });
 
   it('should be false for objects', () => {
-    expect(isNumber({name: 'gracie'})).to.be.equal(false);
+    expect(isNumber({ name: 'gracie' })).to.be.equal(false);
   });
 
   it('should be false for arrays', () => {
@@ -37,7 +37,7 @@ describe('common :: isNumber tests', () => {
   });
 
   it('should be false for null values', () => {
-    let animal = null;
+    const animal = null;
     expect(isNumber(animal)).to.be.equal(false);
   });
 });

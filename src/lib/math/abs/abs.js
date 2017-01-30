@@ -17,5 +17,5 @@ export default function abs(num) {
 
   newNumber = num < 0 ? newNumber *= -1 : num;
 
-	return newNumber;
+  return newNumber;
 }
