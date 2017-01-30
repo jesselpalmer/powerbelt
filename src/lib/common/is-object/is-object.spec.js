@@ -4,13 +4,13 @@ const expect = require('chai').expect;
 
 describe('common :: isObject tests', () => {
   it('should be true for objects', () => {
-    const school = {name: 'stanford'};
+    const school = { name: 'stanford' };
     expect(isObject(school)).to.be.equal(true);
   });
 
   it('should be false for multiple objects', () => {
-    const school1 = {name: 'carnegie mellon'};
-    const school2 = {name: 'cal'};
+    const school1 = { name: 'carnegie mellon' };
+    const school2 = { name: 'cal' };
     expect(isObject(school1, school2)).to.be.equal(false);
   });
 
@@ -40,7 +40,7 @@ describe('common :: isObject tests', () => {
   });
 
   it('should be false for null values', () => {
-    let school = null;
+    const school = null;
     expect(isObject(school)).to.be.equal(false);
   });
 });

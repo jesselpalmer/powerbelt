@@ -6,19 +6,19 @@
  * @return {boolean} - The result of the squared check.
  */
 export default function isSquared(num) {
-	if (num === 0) {
-		return false;
-	}
+  if (num === 0) {
+    return false;
+  }
 
-	let count = 0;
+  let count = 0;
 
-	while (count <= num / 2) {
-		if ((count * count) === num) {
-			return true;
-		}
+  while (count <= num / 2) {
+    if ((count * count) === num) {
+      return true;
+    }
 
-		count++;
-	}
+    count += 1;
+  }
 
-	return false;
+  return false;
 }

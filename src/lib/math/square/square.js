@@ -6,5 +6,5 @@
  * @return {number} - Squared number.
  */
 export default function square(num) {
-	return num * num;
+  return num * num;
 }
