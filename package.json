@@ -48,7 +48,7 @@
     ]
   },
   "engines": {
-    "node": ">=7.2.1"
+    "node": ">=7.4.0"
   },
   "babel": {
     "presets": [
