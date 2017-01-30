@@ -16,7 +16,8 @@
     "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
     "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register",
     "cover": "istanbul cover _mocha",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "./node_modules/.bin/eslint ./src"
   },
   "repository": "git+https://github.com/jesselpalmer/powerbelt.git",
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com)",
