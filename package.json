@@ -13,8 +13,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register --presets latest",
-    "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register --presets latest",
+    "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
+    "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register",
     "cover": "istanbul cover _mocha",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "./node_modules/.bin/eslint ./src"
@@ -34,10 +34,6 @@
   "devDependencies": {
     "babel-cli": "6.22.2",
     "babel-preset-env": "1.1.8",
-    "babel-preset-es2015": "6.22.0",
-    "babel-preset-es2016": "6.22.0",
-    "babel-preset-es2017": "6.22.0",
-    "babel-preset-latest": "6.22.0",
     "babel-register": "6.22.0",
     "coveralls": "2.11.15",
     "eslint": "3.14.1",
@@ -58,8 +54,7 @@
   },
   "babel": {
     "presets": [
-      "env",
-      "latest"
+      "env"
     ]
   }
 }

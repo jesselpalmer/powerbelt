@@ -16,7 +16,7 @@ export default function titleCase(str) {
 
     if (i === 0) {
       currentWord = currentWord[0].toUpperCase() + currentWord.slice(1);
-    } else if (!ignoreWords.includes(currentWord)) {
+    } else if (ignoreWords.indexOf(currentWord) === -1) {
       currentWord = currentWord[0].toUpperCase() + currentWord.slice(1);
     }
 
