@@ -1,3 +1,5 @@
+import isString from '../../common/is-string/is-string';
+import INVALID_STRING_ERROR from '../../errors/error-messages';
 /**
  * titleCase()
  * ----------
@@ -6,6 +8,10 @@
  * @return {string} - The title cased string.
  */
 export default function titleCase(str) {
+  if (!isString(str)) {
+    throw new Error(INVALID_STRING_ERROR);
+  }
+
   const words = str.split(' ');
   const len = words.length;
   const result = [];
@@ -15,9 +21,9 @@ export default function titleCase(str) {
     let currentWord = words[i];
 
     if (i === 0) {
-      currentWord = currentWord[0].toUpperCase() + currentWord.slice(1);
+      currentWord = currentWord[0].toUpperCase() + currentWord.slice(1).toLowerCase();
     } else if (ignoreWords.indexOf(currentWord) === -1) {
-      currentWord = currentWord[0].toUpperCase() + currentWord.slice(1);
+      currentWord = currentWord[0].toUpperCase() + currentWord.slice(1).toLowerCase();
     }
 
     result.push(currentWord);

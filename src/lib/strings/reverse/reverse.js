@@ -1,3 +1,6 @@
+import isString from '../../common/is-string/is-string';
+import INVALID_STRING_ERROR from '../../errors/error-messages';
+
 /**
  * reverse()
  * ----------
@@ -6,6 +9,10 @@
  * @return {string} - The reversed string.
  */
 export default function reverse(word) {
+  if (!isString(word)) {
+    throw new Error(INVALID_STRING_ERROR);
+  }
+
   let reversedWord = '';
   const startingPoint = word.length - 1;
 
