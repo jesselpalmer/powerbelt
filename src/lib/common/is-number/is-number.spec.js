@@ -7,7 +7,7 @@ describe('common :: isNumber tests', () => {
     expect(isNumber(4)).to.be.equal(true);
   });
 
-  it('should be false for multiple number', () => {
+  it('should be false for multiple numbers', () => {
     expect(isNumber(4, 3)).to.be.equal(false);
   });
 
