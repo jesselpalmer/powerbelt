@@ -9,3 +9,6 @@ dist
 
 # Node.js modules
 node_modules
+
+# npm generated files
+npm-debug.log
