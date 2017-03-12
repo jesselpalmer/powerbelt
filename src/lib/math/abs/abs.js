@@ -1,5 +1,5 @@
-import isNumber from '../../common/is-number/is-number';
-import errorMessages from '../../errors/error-messages';
+import isNumber from '../../common/is-number';
+import errorMessages from '../../errors';
 
 /**
  * abs()
