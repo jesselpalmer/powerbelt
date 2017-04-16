@@ -5,6 +5,7 @@
  * @param {number} num - The number that will be cubed.
  * @return {number} - Cubed number.
  */
-export default function cube(num) {
-  return num * num * num;
-}
+
+const cube = num => num * num * num;
+
+export default cube;
