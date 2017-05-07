@@ -16,7 +16,7 @@
     "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
     "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register",
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test && nyc report",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
     "lint": "./node_modules/.bin/eslint ./src"
   },
   "repository": "git+https://github.com/powerbelt/powerbelt.git",
