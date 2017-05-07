@@ -5,9 +5,4 @@ test:
           MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
 
 dependencies:
-  pre:
-    - npm install -g istanbul
-
-general:
-  artifacts:
-    - ./coverage
+  post: npm run coveralls
