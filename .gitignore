@@ -12,3 +12,9 @@ node_modules
 
 # npm generated files
 npm-debug.log
+
+# istanbul output
+.nyc_output
+
+# coverage
+coverage
