@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "JavaScript Utility Belt",
   "keywords": [
+    "javascript",
     "utility"
   ],
   "homepage": "https://github.com/powerbelt/powerbelt#readme",
@@ -12,6 +13,8 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
+    "build": "babel ./src/lib -d dist --presets latest",
+    "build:watch": "babel -w ./src/lib -d dist --presets latest",
     "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
     "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register",
@@ -32,6 +35,7 @@
     "babel-cli": "6.24.1",
     "babel-preset-env": "1.4.0",
     "babel-preset-es2015": "6.24.1",
+    "babel-preset-latest": "6.24.1",
     "babel-register": "6.24.1",
     "chai": "3.5.0",
     "coveralls": "2.13.1",
