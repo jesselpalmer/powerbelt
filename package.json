@@ -15,9 +15,8 @@
     "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
     "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register",
-    "coverage": "nyc report",
-    "coverage:report:html": "nyc --reporter=lcov --reporter=text-lcov npm test",
-    "coveralls": "npm run coverage:report:html | coveralls",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test && nyc report",
+    "coveralls": "npm run coverage | coveralls",
     "lint": "./node_modules/.bin/eslint ./src"
   },
   "repository": "git+https://github.com/powerbelt/powerbelt.git",
@@ -59,10 +58,8 @@
     ]
   },
   "nyc": {
-    "include": [
-      "src/**/*.js"
-    ],
     "exclude": [
+      "**/index.js*",
       "**/*.spec.js",
       "dist"
     ]
