@@ -5,16 +5,6 @@
  * @param {any} values - The values that will be tested.
  * @return {boolean} - Whether a value is a boolean or not.
  */
-const isBoolean = (...values) => { 
-  for (let i = 0; i < values.length; i++) {
-    const currentValue = values[i];
-
-    if (typeof currentValue !== 'boolean') {
-      return false;
-    }
-  }
-
-  return true;
-}
+const isBoolean = (...values) => values.every((value) => typeof value === 'boolean');
 
 export default isBoolean;
