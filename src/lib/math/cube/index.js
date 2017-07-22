@@ -1,3 +1,3 @@
-import cube from './cube';
+import cube from './cube'
 
-export default cube;
+export default cube

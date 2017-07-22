@@ -1,3 +1,3 @@
-import isOdd from './is-odd';
+import isOdd from './is-odd'
 
-export default isOdd;
+export default isOdd

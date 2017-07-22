@@ -1,3 +1,3 @@
-import isSquared from './is-squared';
+import isSquared from './is-squared'
 
-export default isSquared;
+export default isSquared

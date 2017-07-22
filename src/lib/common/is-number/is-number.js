@@ -5,6 +5,6 @@
  * @param {any} value - The value that will be tested.
  * @return {boolean} - Whether a value is a number or not.
  */
-export default function isNumber(value) {
-  return typeof value === 'number' && arguments.length === 1;
+export default function isNumber (value) {
+  return typeof value === 'number' && arguments.length === 1
 }

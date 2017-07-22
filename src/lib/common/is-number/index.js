@@ -1,3 +1,3 @@
-import isNumber from './is-number';
+import isNumber from './is-number'
 
-export default isNumber;
+export default isNumber

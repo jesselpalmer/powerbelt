@@ -1,3 +1,3 @@
-import isBoolean from './is-boolean';
+import isBoolean from './is-boolean'
 
-export default isBoolean;
+export default isBoolean

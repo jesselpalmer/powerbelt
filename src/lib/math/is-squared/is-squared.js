@@ -5,20 +5,20 @@
  * @param {number} num - The number that will be checked to see if it is squared.
  * @return {boolean} - The result of the squared check.
  */
-export default function isSquared(num) {
+export default function isSquared (num) {
   if (num === 0) {
-    return false;
+    return false
   }
 
-  let count = 0;
+  let count = 0
 
   while (count <= num / 2) {
     if ((count * count) === num) {
-      return true;
+      return true
     }
 
-    count += 1;
+    count += 1
   }
 
-  return false;
+  return false
 }

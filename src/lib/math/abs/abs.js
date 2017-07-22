@@ -1,5 +1,5 @@
-import isNumber from '../../common/is-number';
-import errorMessages from '../../errors';
+import isNumber from '../../common/is-number'
+import errorMessages from '../../errors'
 
 /**
  * abs()
@@ -8,14 +8,14 @@ import errorMessages from '../../errors';
  * @param {number} num - The number that the absolute value is needed for.
  * @return {number} - absolute value.
  */
-export default function abs(num) {
-  let newNumber = num;
+export default function abs (num) {
+  let newNumber = num
 
   if (!isNumber(num)) {
-    throw new Error(errorMessages.INVALID_NUMBER_ERROR);
+    throw new Error(errorMessages.INVALID_NUMBER_ERROR)
   }
 
-  newNumber = num < 0 ? newNumber *= -1 : num;
+  newNumber = num < 0 ? newNumber *= -1 : num
 
-  return newNumber;
+  return newNumber
 }

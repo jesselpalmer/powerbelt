@@ -1,9 +1,9 @@
-import abs from './abs';
-import cube from './cube';
-import isEven from './is-even';
-import isOdd from './is-odd';
-import isSquared from './is-squared';
-import square from './square';
+import abs from './abs'
+import cube from './cube'
+import isEven from './is-even'
+import isOdd from './is-odd'
+import isSquared from './is-squared'
+import square from './square'
 
 module.exports = {
   abs,
@@ -11,5 +11,5 @@ module.exports = {
   isEven,
   isOdd,
   isSquared,
-  square,
-};
+  square
+}

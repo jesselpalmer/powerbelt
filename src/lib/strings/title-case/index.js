@@ -1,3 +1,3 @@
-import titleCase from './title-case';
+import titleCase from './title-case'
 
-export default titleCase;
+export default titleCase

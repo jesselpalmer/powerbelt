@@ -6,6 +6,6 @@
  * @return {number} - Squared number.
  */
 
-const square = num => num * num;
+const square = num => num * num
 
-export default square;
+export default square

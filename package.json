@@ -15,12 +15,13 @@
   "scripts": {
     "build": "babel ./src/lib -d dist --presets latest",
     "build:watch": "babel -w ./src/lib -d dist --presets latest",
-    "test": "npm run test:unit",
+    "test": "npm run test:unit && npm run lint",
     "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
     "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register",
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test && nyc report",
     "coveralls": "npm run coverage | coveralls",
-    "lint": "./node_modules/.bin/eslint ./src"
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "repository": "git+https://github.com/powerbelt/powerbelt.git",
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com)",
@@ -39,14 +40,12 @@
     "babel-register": "6.24.1",
     "chai": "3.5.0",
     "coveralls": "2.13.1",
-    "eslint": "3.19.0",
-    "eslint-config-airbnb-base": "11.1.3",
-    "eslint-plugin-import": "2.2.0",
     "istanbul": "0.4.5",
     "mocha": "3.3.0",
     "mocha-junit-reporter": "1.13.0",
     "mocha-lcov-reporter": "1.3.0",
-    "nyc": "10.3.2"
+    "nyc": "10.3.2",
+    "standard": "10.0.2"
   },
   "xo": {
     "envs": [

@@ -6,6 +6,6 @@
  * @return {number} - Cubed number.
  */
 
-const cube = num => num * num * num;
+const cube = num => num * num * num
 
-export default cube;
+export default cube

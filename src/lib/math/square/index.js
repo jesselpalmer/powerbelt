@@ -1,3 +1,3 @@
-import isSquare from './square';
+import isSquare from './square'
 
-export default isSquare;
+export default isSquare

@@ -1,3 +1,3 @@
-import errorMessages from './error-messages';
+import errorMessages from './error-messages'
 
-export default errorMessages;
+export default errorMessages

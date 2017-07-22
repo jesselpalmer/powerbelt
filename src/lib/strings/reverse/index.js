@@ -1,3 +1,3 @@
-import reverse from './reverse';
+import reverse from './reverse'
 
-export default reverse;
+export default reverse

@@ -1,3 +1,3 @@
-import abs from './abs';
+import abs from './abs'
 
-export default abs;
+export default abs

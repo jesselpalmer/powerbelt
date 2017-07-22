@@ -1,3 +1,3 @@
-import isString from './is-string';
+import isString from './is-string'
 
-export default isString;
+export default isString
