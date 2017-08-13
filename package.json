@@ -15,13 +15,13 @@
   "scripts": {
     "build": "babel ./src/lib -d dist --presets latest",
     "build:watch": "babel -w ./src/lib -d dist --presets latest",
-    "test": "npm run test:unit && npm run lint",
-    "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
-    "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register",
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test && nyc report",
     "coveralls": "npm run coverage | coveralls",
     "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint:fix": "standard --fix",
+    "test": "npm run test:unit && npm run lint",
+    "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
+    "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register"
   },
   "repository": "git+https://github.com/powerbelt/powerbelt.git",
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com)",
