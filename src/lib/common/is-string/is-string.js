@@ -2,9 +2,9 @@
  * isString()
  * ----------
  * Method that tests whether a value is a string or not.
- * @param {any} value - The value that will be tested.
+ * @param {any} values - The value that will be tested.
  * @return {boolean} - Whether a value is a string or not.
  */
-export default function isString (value) {
-  return typeof value === 'string' && arguments.length === 1
-}
+const isString = (...values) => values.every(value => typeof value === 'string')
+
+export default isString
