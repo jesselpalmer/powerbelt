@@ -9,8 +9,8 @@ describe('common :: isNumber tests', () => {
     expect(isNumber(4)).to.be.equal(true)
   })
 
-  it('should be false for multiple numbers', () => {
-    expect(isNumber(4, 3)).to.be.equal(false)
+  it('should be true for multiple numbers', () => {
+    expect(isNumber(2, 3)).to.be.equal(true)
   })
 
   it('should be false for boolean', () => {
@@ -27,10 +27,6 @@ describe('common :: isNumber tests', () => {
 
   it('should be false for arrays', () => {
     expect(isNumber([5, 1])).to.be.equal(false)
-  })
-
-  it('should be false for multiple numbers', () => {
-    expect(isNumber(2, 3)).to.be.equal(false)
   })
 
   it('should be false for undefined values', () => {
