@@ -2,10 +2,7 @@
   "name": "powerbelt",
   "version": "0.0.0",
   "description": "JavaScript Utility Belt",
-  "keywords": [
-    "javascript",
-    "utility"
-  ],
+  "keywords": ["javascript", "utility"],
   "homepage": "https://github.com/powerbelt/powerbelt#readme",
   "bugs": {
     "url": "https://github.com/powerbelt/powerbelt/issues"
@@ -15,13 +12,17 @@
   "scripts": {
     "build": "babel ./src/lib -d dist --presets latest",
     "build:watch": "babel -w ./src/lib -d dist --presets latest",
-    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test && nyc report",
+    "coverage":
+      "nyc --reporter=lcov --reporter=text-lcov npm test && nyc report",
     "coveralls": "npm run coverage | coveralls",
     "lint": "standard",
     "lint:fix": "standard --fix",
+    "precommit": "pretty-quick --staged",
     "test": "npm run test:unit && npm run lint",
-    "test:unit": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
-    "test:unit:watch": "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register"
+    "test:unit":
+      "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-register",
+    "test:unit:watch":
+      "NODE_ENV=test mocha './src/**/*.spec.js' -w --compilers js:babel-register"
   },
   "repository": "git+https://github.com/powerbelt/powerbelt.git",
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com)",
@@ -34,36 +35,36 @@
   ],
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-preset-env": "1.6.1",
+    "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
     "chai": "4.1.2",
-    "coveralls": "3.0.0",
+    "coveralls": "3.0.1",
+    "eslint": "4.19.1",
+    "eslint-plugin-prettier": "2.6.0",
+    "husky": "0.14.3",
     "istanbul": "0.4.5",
-    "mocha": "5.0.1",
+    "mocha": "5.2.0",
     "mocha-junit-reporter": "1.17.0",
     "mocha-lcov-reporter": "1.3.0",
-    "nyc": "11.4.1",
-    "prettier": "1.10.2",
-    "standard": "10.0.3"
+    "nyc": "11.8.0",
+    "prettier": "1.12.1",
+    "pretty-quick": "1.5.0",
+    "standard": "11.0.1"
   },
   "xo": {
-    "envs": [
-      "jasmine"
-    ]
+    "envs": ["jasmine"]
   },
   "engines": {
     "node": ">=7.7.2"
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   },
   "nyc": {
-    "exclude": [
-      "**/index.js*",
-      "**/*.spec.js",
-      "dist"
-    ]
+    "exclude": ["**/index.js*", "**/*.spec.js", "dist"]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   }
 }

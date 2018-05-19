@@ -18,3 +18,6 @@ npm-debug.log
 
 # coverage
 coverage
+
+# yarn generated files
+yarn-error.log
