@@ -8,7 +8,7 @@ import INVALID_STRING_ERROR from '../../errors/error-messages'
  * @param {str} string - The string that will be title cased.
  * @return {string} - The title cased string.
  */
-export default function titleCase(str) {
+export default function titleCase (str) {
   if (!isString(str)) {
     throw new Error(INVALID_STRING_ERROR)
   }

@@ -9,7 +9,7 @@ import errorMessages from '../../errors'
  * @param {number} num - The number that the absolute value is needed for.
  * @return {number} - absolute value.
  */
-export default function abs(num) {
+export default function abs (num) {
   let newNumber = num
 
   if (!isNumber(num)) {
