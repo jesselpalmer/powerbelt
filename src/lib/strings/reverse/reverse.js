@@ -5,10 +5,11 @@ import INVALID_STRING_ERROR from '../../errors/error-messages'
  * reverse()
  * ----------
  * Method that returns a string in reverse.
+ *
  * @param {word} string - The string that will be reversed.
  * @return {string} - The reversed string.
  */
-export default function reverse (word) {
+export default function reverse(word) {
   if (!isString(word)) {
     throw new Error(INVALID_STRING_ERROR)
   }

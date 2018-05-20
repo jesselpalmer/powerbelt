@@ -25,7 +25,9 @@ describe('common :: isBoolean tests', () => {
     expect(isBoolean('nice', 'today', true)).to.be.equal(false)
     expect(isBoolean('nice', 1, true)).to.be.equal(false)
     expect(isBoolean(true, 1, true)).to.be.equal(false)
-    expect(isBoolean(true, 1, true, { name: 'siliconvalley' })).to.be.equal(false)
+    expect(isBoolean(true, 1, true, { name: 'siliconvalley' })).to.be.equal(
+      false
+    )
   })
 
   it('should be false for numbers', () => {

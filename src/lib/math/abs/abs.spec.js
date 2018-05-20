@@ -14,6 +14,8 @@ describe('math :: abs tests', () => {
   })
 
   it('should an error thrown if string is used', () => {
-    expect(() => { abs('3') }).to.throw(Error)
+    expect(() => {
+      abs('3')
+    }).to.throw(Error)
   })
 })

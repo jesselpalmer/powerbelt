@@ -4,10 +4,11 @@ import INVALID_STRING_ERROR from '../../errors/error-messages'
  * titleCase()
  * ----------
  * Method that returns a string in Title Case.
+ *
  * @param {str} string - The string that will be title cased.
  * @return {string} - The title cased string.
  */
-export default function titleCase (str) {
+export default function titleCase(str) {
   if (!isString(str)) {
     throw new Error(INVALID_STRING_ERROR)
   }
@@ -21,9 +22,11 @@ export default function titleCase (str) {
     let currentWord = words[i]
 
     if (i === 0) {
-      currentWord = currentWord[0].toUpperCase() + currentWord.slice(1).toLowerCase()
+      currentWord =
+        currentWord[0].toUpperCase() + currentWord.slice(1).toLowerCase()
     } else if (ignoreWords.indexOf(currentWord) === -1) {
-      currentWord = currentWord[0].toUpperCase() + currentWord.slice(1).toLowerCase()
+      currentWord =
+        currentWord[0].toUpperCase() + currentWord.slice(1).toLowerCase()
     }
 
     result.push(currentWord)
